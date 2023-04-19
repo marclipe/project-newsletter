@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+  --white-color: #FFFFFF; 
+
+  --font-family-work: 'Work Sans', sans-serif;
+  --font-family-spartan: 'League Spartan', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-league);
+    background: url('../img/read_news.jpg'), var(--body-bg-color);
+    /* background-position: top right, top left; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% 100%, 50% auto;
+    background-position: right center, left center;
+}
+
+/* .header-container {
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.image__logo {
+    height: 100%;
+    width: 389px;
+    padding: 3.125rem 0 5.75rem 1.875rem;
+}
+
+/* .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--body-bg-color);
+} */
+
+.title__info {
+    color: var(--title-color);
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    padding: 0 0 0.563rem 0;
+    font-family: var(--font-family-work);
+    font-weight: 700;
+}
+
+.subtitle__info {
+    color: var(--text-color);
+    font-family: var(--font-family-spartan);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 0 0 0.563rem 0;
+}
+
+.paragraph__info {
+    color: var(--white-color);
+    font-family: var(--font-family-spartan);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    padding: 0 0 0.563rem 0;
+}
+
+.insert__email {
+    font-family: var(--font-family-spartan);
+    color: var(--form-color);
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 138.73%;
+    font-weight: 700;
+    padding: 3.125rem 0 1.063rem 0;
+    display: block;
+}
+
+.container__form {
+    display: flex;
+}
+
+#text-form {
+    background-color: var(--white-color);
+    width: 55%;
+    height: 3rem;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 5px solid var(--title-color);
+}
+
+#text-form:focus {
+    outline: 1px solid var(--title-color);
+}
+
+#text-form::placeholder {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    padding-left: 0.625rem;
+}
+
+.box__send {
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-button-color);
+    display: grid;
+    place-items: center;
+}
+
+.image__send-email {
+    color: var(--white-color);
+}
+
+.container__read {
+    display: flex;
+    padding-bottom: 3.125rem;
+}
+
+.let__read {
+    color: var(--bg-button-color);
+    text-decoration: none;
+    font-family: var(--font-family-spartan);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 138.73%;
+}
+
+.button__let-read {
+    color: #8257e5;
+}
+
+.main-content {
+    padding: 0 0 0 2.375rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: var(--body-bg-color);
+    }
+
+    .image__logo {
+        width: 300px;
+        padding-bottom: 5.75rem;
+    }
+
+    .title__info {
+        font-size: 1.3rem;
+        padding: 0 0.563rem 0.875rem;
+    }
+
+    .subtitle__info{
+        padding: 0 0.563rem;
+    }
+
+    .paragraph__info {
+        padding: 0.875rem 0.563rem 0;
+    }
+
+    .insert__email {
+        padding-left: 0.563rem;
+    }
+
+    .container__read {
+        padding-left: 0.563rem;
+    }
+
+    #text-form{
+        width: 72%;
+        padding-left: 0.563rem;
+    }
+}
+
