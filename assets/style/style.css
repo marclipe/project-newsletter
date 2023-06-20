@@ -29,24 +29,11 @@ body {
     background-position: right center, left center;
 }
 
-/* .header-container {
-    display: flex;
-    justify-content: flex-start;
-} */
-
 .image__logo {
     height: 100%;
     width: 389px;
     padding: 3.125rem 0 5.75rem 1.875rem;
 }
-
-/* .background {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--body-bg-color);
-} */
 
 .title__info {
     color: var(--title-color);
